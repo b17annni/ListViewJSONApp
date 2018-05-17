@@ -24,9 +24,9 @@ public Mountain_class(String inName){
 public String myStrings (){return name;}
 public String info(){
     String str=name;
-    str+=" dislocated in ";
+    str+=" is dislocated in ";
     str+=location;
-    str+=" and  height ";
+    str+=" and  is ";
     str+=Integer.toString(height);
     str+="m ";
     return str;
