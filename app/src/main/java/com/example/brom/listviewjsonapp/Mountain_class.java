@@ -23,9 +23,12 @@ public class Mountain_class {
 
     public String myStrings (){return name;}
     public String info(){
-        String str=location;
-        str+="  ";
-        str+=name;
+        String str=name;
+        str+=" is dislocated in ";
+        str+=location;
+        str+=" and is ";
+        str+= height;
+        str+= "m";
         return str;
 
     }
