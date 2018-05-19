@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 Mountain_class m = myberg.get(position);
-                Toast.makeText(getApplicationContext(), m.myStrings(), Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), m.info(), Toast.LENGTH_LONG).show();
             }
         });
 
@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
 
             try {
                 // Construct the URL for the Internet service
-                URL url = new URL("http://wwwlab.iit.his.se/brom/kurser/mobilprog/dbservice/admin/getdataasjson.php?type=brom");
+                URL url = new URL("http://wwwlab.iit.his.se/b17annni/mp/hfj.json");
 
                 // Create the request to the PHP-service, and open the connection
                 urlConnection = (HttpURLConnection) url.openConnection();
